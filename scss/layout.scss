@@ -94,13 +94,13 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 
 }
 
-.col-right{ width: 323px; position: relative; float: right; }
+.col-right{ width: 323px; float: right; }
 
 /*///// Content Specific Styles /////*/
 
 /* Featured */
 
-#featured{ @include clearfix; border-bottom: 1px solid #ebebeb; }
+#featured{ @include clearfix; border-bottom: 1px solid #ebebeb; margin-top: 60px; }
 .featured_img{ padding: 1em 0; float: left;}
 
 /* Main */ 
@@ -111,7 +111,6 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 .meta{ 
 	display: inline-block;
 	font-size: .750em;
-	position: relative;
 	-webkit-font-smoothing: antialiased;
 	margin: -10px 0;
 	
