@@ -126,8 +126,7 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 .stories{ margin: 2.5em 0; }
 .stories .col-1 h2{ color: #000; }
 
-.story-right{ float: right; width: 35%; height: 1000px; }
-.story-left{ float: left; border-right: 1px solid rgba(0,0,0,0.1); width: 65%; padding: 30px; }
+.story-left{ float: left; border-right: 1px solid rgba(0,0,0,0.1); width: 65%; padding: 0 30px 0 0; }
 
 .sect{ 
 	border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -150,7 +149,27 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 	float: right;
 	width: 68%;
 
-	.headline a{ font-size: 0.8em;}
 	div{ margin: 0 0 0.2em 0; }
 	h3{ margin: 0; }
+	.headline a{ font-size: 0.8em;}
 }
+
+/* Upcoming */
+
+.story-right{ 
+	float: right; width: 26%; 
+
+	.headline a{ font-size: 0.7em;}
+
+	div{ margin: 0 0 0.1em 0; }
+
+	.col-1{ margin-top: 2em; }
+
+	ul.upcoming{
+		list-style: none;
+		padding: 0;
+
+		li{ margin: 0 0 1.4em 0; }
+	}
+}
+
