@@ -1,3 +1,8 @@
+/* LAYOUT STYLES PAGE
+This stylesheet creates the layout of the page. Whether it be for specific pieces of content or the container that houses them all.
+*/
+
+/*///// Container Styles /////*/
 .container{
 	margin: 0 auto;
 	margin-bottom: 1em;
@@ -14,10 +19,14 @@
 .col-container{
 	@include clearfix;
 }
+
+/*///// Column Styles /////*/
+
+/* Global Column Styling */
+
 .col{
 	margin-top:1em;
 	padding-top:1em;
-	border-top:1px solid blue;
 	min-height:200px;
 	&:first-child{ margin-top:0; padding-top:0; border:none; }
 	
@@ -29,7 +38,20 @@
 	}
 }
 
-.col-1{ background:purple; width:100%; }
+/* Specific Column Styles */
+
+.col-1{ 
+	width:100%; 
+	margin: 2em 0;
+	
+	h2{ 
+		color: #fff;
+		font: .875em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 0;
+	}	
+}
 
 .col-2{
 	background:orange;
@@ -41,22 +63,50 @@
 }
 
 .col-3{
-	background:blue;
 	@media (min-width:$largest-breakpoint){
 		width:32%;
 		margin-left:2%;
 		&:first-child{ margin-left:0; }
 	}
+		.headline a{ font-size: 0.8em; }
+}
+
+.col-5{
+	color: #fff;
+	@media (min-width:$largest-breakpoint){
+		width:19%;
+		margin-left:1.2%;
+		&:first-child{ margin-left:0; }
+	}
+		.headline a{ font-size: 0.4em; color: #fff; font-weight: bold; }
+
+		img{ max-width: 100%; height: auto;}
+
+		div{ margin: 10px 0; }
+		div:first-of-type{ margin-top: -5px; }
+
+		.meta{ 
+			margin: -15px 0;
+			a{
+				color: #fff; 
+			}
+		}
+
 }
 
 .col-right{ width: 323px; position: relative; float: right; }
 
+/*///// Content Specific Styles /////*/
+
+/* Featured */
+
 #featured{ @include clearfix; border-bottom: 1px solid #ebebeb; }
 .featured_img{ padding: 1em 0; float: left;}
- 
+
+/* Main */ 
 .kicker{ color: #555; font: 700 .688em/1.091em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing: 1px; margin: 0 0 .364em; }
 .headline { font-size: 2em; line-height: 1em;}
-.headline a{ text-decoration: none; -webkit-transition: color .15s cubic-bezier(0,0,0.58,1); -moz-transition: color .15s cubic-bezier(0,0,0.58,1); -o-transition: color .15s cubic-bezier(0,0,0.58,1); transition: color .15s cubic-bezier(0,0,0.58,1); color: #191919; font: 700 1.375em/1.136em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.headline a{ text-decoration: none; -webkit-transition: color .15s cubic-bezier(0,0,0.58,1); -moz-transition: color .15s cubic-bezier(0,0,0.58,1); -o-transition: color .15s cubic-bezier(0,0,0.58,1); transition: color .15s cubic-bezier(0,0,0.58,1); color: #191919; font: 700 70/1.136em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;}
 .desc{ color: #444; font: .875em/1.286em "source-sans-pro","Helvetica Neue",sans-serif; margin: .250em 0 .357em;}
 .meta{ 
 	display: inline-block;
@@ -70,3 +120,8 @@
 	li:first-child{ margin: 0;}
 	a{ text-decoration: none; color: #606060;}
 }
+
+/* Main Stories */
+
+.story-right{ float: right; width: 35%; height: 1000px; }
+.story-left{ float: left; border-right: 1px solid rgba(0,0,0,0.1); width: 65%; height: 1000px; }
