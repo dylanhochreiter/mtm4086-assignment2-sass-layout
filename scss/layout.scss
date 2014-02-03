@@ -123,5 +123,34 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 
 /* Main Stories */
 
+.stories{ margin: 2.5em 0; }
+.stories .col-1 h2{ color: #000; }
+
 .story-right{ float: right; width: 35%; height: 1000px; }
-.story-left{ float: left; border-right: 1px solid rgba(0,0,0,0.1); width: 65%; height: 1000px; }
+.story-left{ float: left; border-right: 1px solid rgba(0,0,0,0.1); width: 65%; padding: 30px; }
+
+.sect{ 
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	height: 130px;
+	padding-bottom: 20px;
+	margin: 0.2em 0;
+}
+
+.imgFloat { 
+	float: left;
+	width: 30%;
+	
+	img{
+		width: 100%; 
+		height: auto;
+	}
+}
+
+.righty_tighty{ 
+	float: right;
+	width: 68%;
+
+	.headline a{ font-size: 0.8em;}
+	div{ margin: 0 0 0.2em 0; }
+	h3{ margin: 0; }
+}
