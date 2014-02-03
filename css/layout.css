@@ -12,7 +12,7 @@ Syntax error: Undefined mixin 'clearfix'.
 8: }
 9: 
 10: .col-container{
-11: 	margin: 0 auto;
+11: 	margin: 1em auto;
 12: 	margin-bottom: 1em;
 
 Backtrace:
@@ -60,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 7 of scss/layout.scss, in `clearfix'\A         from line 7 of scss/layout.scss\A \A 2: This stylesheet creates the layout of the page. Whether it be for specific pieces of content or the container that houses them all.\A 3: */\A 4: \A 5: /*///// Container Styles /////*/\A 6: .container{\A 7: 	@include clearfix;\A 8: }\A 9: \A 10: .col-container{\A 11: 	margin: 0 auto;\A 12: 	margin-bottom: 1em;"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 7 of scss/layout.scss, in `clearfix'\A         from line 7 of scss/layout.scss\A \A 2: This stylesheet creates the layout of the page. Whether it be for specific pieces of content or the container that houses them all.\A 3: */\A 4: \A 5: /*///// Container Styles /////*/\A 6: .container{\A 7: 	@include clearfix;\A 8: }\A 9: \A 10: .col-container{\A 11: 	margin: 1em auto;\A 12: 	margin-bottom: 1em;"; }

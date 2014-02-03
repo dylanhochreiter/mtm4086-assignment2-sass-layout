@@ -8,7 +8,7 @@ This stylesheet creates the layout of the page. Whether it be for specific piece
 }
 
 .col-container{
-	margin: 0 auto;
+	margin: 1em auto;
 	margin-bottom: 1em;
 	
 	@media (min-width: $largest-breakpoint){
