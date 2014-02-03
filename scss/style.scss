@@ -29,3 +29,6 @@ h2{ font-family: $primary-font; @include font-size(22); }
 
 /* -- Layout Components -- */
 @import 'layout';
+
+/* -- Footer Components -- */
+@import 'footer';
